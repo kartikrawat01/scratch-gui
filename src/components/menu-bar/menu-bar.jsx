@@ -6,7 +6,8 @@ import PropTypes from 'prop-types';
 import bindAll from 'lodash.bindall';
 import bowser from 'bowser';
 import React from 'react';
-
+// This is your custom component import
+import ArduinoConnectButton from '../arduino-connect-button/arduino-connect-button.jsx';
 import VM from 'scratch-vm';
 
 import Box from '../box/box.jsx';
@@ -728,6 +729,11 @@ class MenuBar extends React.Component {
                 {/* show the proper UI in the account menu, given whether the user is
                 logged in, and whether a session is available to log in with */}
                 <div className={styles.accountInfoGroup}>
+                    {/* --- THIS IS THE NEW, SAFER PLACEMENT FOR THE BUTTON --- */}
+                    <div className={styles.menuBarItem}>
+                        <ArduinoConnectButton />
+                    </div>
+
                     <div className={styles.menuBarItem}>
                         {this.props.canSave && (
                             <SaveStatus />

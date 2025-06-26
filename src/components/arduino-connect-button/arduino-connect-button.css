@@ -1,0 +1,29 @@
+.button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: #575E75;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+.button:hover:not(:disabled) {
+    background-color: #f0f0f0;
+}
+.button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+.icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.connected {
+    background-color: #D4EDDA; /* A pleasant green for success */
+    border-color: #C3E6CB;
+}

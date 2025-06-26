@@ -30,7 +30,7 @@ import Alerts from '../../containers/alerts.jsx';
 import DragLayer from '../../containers/drag-layer.jsx';
 import ConnectionModal from '../../containers/connection-modal.jsx';
 import TelemetryModal from '../telemetry-modal/telemetry-modal.jsx';
-
+import myBrandLogo from '../menu-bar/my-logo.svg';
 import layout, {STAGE_SIZE_MODES} from '../../lib/layout-constants';
 import {resolveStageSize} from '../../lib/screen-utils';
 import {themeMap} from '../../lib/themes';
@@ -236,7 +236,7 @@ const GUIComponent = props => {
                     enableCommunity={enableCommunity}
                     isShared={isShared}
                     isTotallyNormal={isTotallyNormal}
-                    logo={logo}
+                    logo={myBrandLogo}
                     renderLogin={renderLogin}
                     showComingSoon={showComingSoon}
                     onClickAbout={onClickAbout}
